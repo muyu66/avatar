@@ -1,0 +1,13 @@
+{
+    "sql": {
+        "database": "avatar",
+        "username": "root",
+        "password": "19931124",
+        "dialect": "mysql",
+        "logging": false,
+        "timezone": "+08:00",
+        "host": "127.0.0.1",
+        "port": 3306
+    },
+    "timezone": "Asia/ShangHai"
+}

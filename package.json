@@ -4,10 +4,11 @@
   "description": "Nest TypeScript starter repository",
   "license": "MIT",
   "scripts": {
+    "dev": "tsc && node index.js",
     "start": "node index.js",
     "start:watch": "nodemon",
     "prestart:prod": "tsc",
-    "start:prod": "node dist/server.js"
+    "start:prod": "node build/server.js"
   },
   "dependencies": {
     "@nestjs/common": "^4.0.0",
@@ -15,14 +16,20 @@
     "@nestjs/microservices": "^4.0.0",
     "@nestjs/testing": "^4.0.0",
     "@nestjs/websockets": "^4.0.0",
+    "@types/config": "^0.0.33",
+    "@types/sequelize": "^4.0.76",
+    "config": "^1.26.2",
+    "mysql2": "^1.4.2",
     "redis": "^2.7.1",
     "reflect-metadata": "^0.1.10",
     "rxjs": "^5.4.0",
-    "typescript": "^2.5.2"
+    "sequelize": "^4.13.11",
+    "typescript": "^2.5.3"
   },
   "devDependencies": {
     "@types/node": "^8.0.28",
     "nodemon": "^1.12.1",
-    "ts-node": "^3.3.0"
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0"
   }
 }

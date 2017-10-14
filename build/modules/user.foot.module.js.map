@@ -1,0 +1,1 @@
+{"version":3,"file":"user.foot.module.js","sourceRoot":"","sources":["../../src/modules/user.foot.module.ts"],"names":[],"mappings":";;;;;;;;AAAA,2CAAwC;AAExC,uCAAuC;AACvC,+BAA+B;AAM/B,IAAa,cAAc,GAA3B;CAA+B,CAAA;AAAlB,cAAc;IAJ1B,eAAM,CAAC;QACJ,WAAW,EAAE,EAAE;QACf,UAAU,EAAE,CAAC,OAAO,CAAC,eAAe,EAAE,GAAG,CAAC,WAAW,CAAC;KACzD,CAAC;GACW,cAAc,CAAI;AAAlB,wCAAc"}
