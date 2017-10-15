@@ -35,6 +35,7 @@ exports.Shoe = {
     },
     colors: {
         type: Sequelize.TEXT(),
+        allowNull: true,
     },
 };
 exports.ShoeConfig = {
@@ -72,4 +73,3 @@ exports.ShoeConfig = {
         },
     },
 };
-//# sourceMappingURL=shoe.js.map

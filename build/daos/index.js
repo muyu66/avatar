@@ -5,4 +5,3 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./equipments/shoe.dao"));
 __export(require("./users/user.foot.dao"));
-//# sourceMappingURL=index.js.map

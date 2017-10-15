@@ -14,4 +14,3 @@ exports.USE_STATE = {
     在穿: 1,
     洗涤: 2,
 };
-//# sourceMappingURL=dict.js.map

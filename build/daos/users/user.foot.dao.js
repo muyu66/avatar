@@ -19,7 +19,8 @@ const base_dao_1 = require("../base.dao");
 let UserFootDao = class UserFootDao extends base_dao_1.BaseDao {
     create(user_foot) {
         return __awaiter(this, void 0, void 0, function* () {
-            return user_foot.save();
+            const model = yield this.models.UserFoot.create(user_foot);
+            return model;
         });
     }
     findAll(params) {
@@ -34,4 +35,3 @@ UserFootDao = __decorate([
     common_1.Component()
 ], UserFootDao);
 exports.UserFootDao = UserFootDao;
-//# sourceMappingURL=user.foot.dao.js.map

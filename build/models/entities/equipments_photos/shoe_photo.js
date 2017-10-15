@@ -36,4 +36,3 @@ exports.ShoePhotoConfig = {
     timestamps: true,
     underscored: true,
 };
-//# sourceMappingURL=shoe_photo.js.map

@@ -15,9 +15,7 @@ export class UserFootService extends BaseService {
     }
 
     async findAll(params) {
-        return this.UserFootDao.findAll({
-            where: params,
-        });
+        return this.UserFootDao.findAll(params);
     }
 
 }

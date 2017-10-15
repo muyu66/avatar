@@ -1,1 +1,0 @@
-{"version":3,"file":"base.dao.js","sourceRoot":"","sources":["../../src/daos/base.dao.ts"],"names":[],"mappings":";;AAAA,sCAAkC;AAElC;IAII,YAAY,MAAa;QACrB,EAAE,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC;YACT,IAAI,CAAC,MAAM,GAAG,MAAM,CAAC;QACzB,CAAC;QAAC,IAAI,CAAC,CAAC;YACJ,IAAI,CAAC,MAAM,GAAG,IAAI,cAAK,EAAE,CAAC;QAC9B,CAAC;IACL,CAAC;CAEJ;AAZD,0BAYC"}

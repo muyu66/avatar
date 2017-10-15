@@ -5,4 +5,3 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./shoe.module"));
 __export(require("./user.foot.module"));
-//# sourceMappingURL=index.js.map

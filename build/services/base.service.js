@@ -13,4 +13,3 @@ BaseService = __decorate([
     common_1.Component()
 ], BaseService);
 exports.BaseService = BaseService;
-//# sourceMappingURL=base.service.js.map

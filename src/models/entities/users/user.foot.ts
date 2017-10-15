@@ -1,4 +1,5 @@
 import { Bool, ModelConfig } from '../../../interfaces/type';
+import * as Dict from '../../../interfaces/dict';
 import * as Sequelize from 'sequelize';
 import { IBase } from '../base';
 
@@ -46,6 +47,7 @@ export const UserFoot = {
     useState: {
         type: Sequelize.INTEGER(1),
         field: 'use_state',
+        defaultValue: Dict.USE_STATE.闲置,
     },
 };
 export const UserFootConfig: ModelConfig = {

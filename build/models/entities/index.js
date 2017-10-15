@@ -8,4 +8,3 @@ __export(require("./equipments/shoe"));
 __export(require("./equipments_photos/shoe_photo"));
 __export(require("./uploads/photo"));
 __export(require("./users/user.foot"));
-//# sourceMappingURL=index.js.map

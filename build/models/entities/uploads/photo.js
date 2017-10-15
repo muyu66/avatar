@@ -22,4 +22,3 @@ exports.PhotoConfig = {
     timestamps: true,
     underscored: true,
 };
-//# sourceMappingURL=photo.js.map

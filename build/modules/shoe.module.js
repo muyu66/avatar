@@ -15,8 +15,7 @@ let ShoeModule = class ShoeModule {
 ShoeModule = __decorate([
     common_1.Module({
         controllers: [Controller.ShoeController],
-        components: [Service.ShoeService, Dao.ShoeDao],
+        components: [Service.ShoeService, Dao.ShoeDao, Service.UserFootService, Dao.UserFootDao],
     })
 ], ShoeModule);
 exports.ShoeModule = ShoeModule;
-//# sourceMappingURL=shoe.module.js.map

@@ -6,7 +6,8 @@ import * as Instance from '../../models/instance';
 export class UserFootDao extends BaseDao {
 
     async create(user_foot: Instance.UserFoot) {
-        return user_foot.save();
+        const model = await this.models.UserFoot.create(user_foot);
+        return model;
     }
 
     async findAll(params) {

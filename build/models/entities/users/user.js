@@ -25,4 +25,3 @@ exports.UserConfig = {
     timestamps: true,
     underscored: true,
 };
-//# sourceMappingURL=user.js.map

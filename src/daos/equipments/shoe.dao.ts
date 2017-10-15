@@ -6,7 +6,8 @@ import * as Instance from '../../models/instance';
 export class ShoeDao extends BaseDao {
 
     async create(shoe: Instance.Shoe) {
-        return shoe.save();
+        const model = await this.models.Shoe.create(shoe);
+        return model;
     }
 
     async findAll(params) {

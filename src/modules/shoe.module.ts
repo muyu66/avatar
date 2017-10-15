@@ -5,6 +5,6 @@ import * as Dao from '../daos';
 
 @Module({
     controllers: [Controller.ShoeController],
-    components: [Service.ShoeService, Dao.ShoeDao],
+    components: [Service.ShoeService, Dao.ShoeDao, Service.UserFootService, Dao.UserFootDao],
 })
 export class ShoeModule { }

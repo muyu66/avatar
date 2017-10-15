@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const Dict = require("../../../interfaces/dict");
 const Sequelize = require("sequelize");
 exports.UserFoot = {
     id: {
@@ -24,6 +25,7 @@ exports.UserFoot = {
     useState: {
         type: Sequelize.INTEGER(1),
         field: 'use_state',
+        defaultValue: Dict.USE_STATE.闲置,
     },
 };
 exports.UserFootConfig = {
@@ -61,4 +63,3 @@ exports.UserFootConfig = {
         },
     },
 };
-//# sourceMappingURL=user.foot.js.map

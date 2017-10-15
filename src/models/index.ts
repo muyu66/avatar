@@ -25,13 +25,15 @@ export class Model {
 
     constructor() {
         this.dbConfig = {
-            database: config.get('sql.database'),
-            username: config.get('sql.username'),
-            password: config.get('sql.password'),
-            option: config.get('sql'),
+            database: config.get('sql.database') as string,
+            username: config.get('sql.username') as string,
+            password: config.get('sql.password') as string,
+            option: config.get('sql') as any,
         };
 
         this.sequelize = new Sequelize(this.dbConfig.database, this.dbConfig.username, this.dbConfig.password, this.dbConfig.option);
+
+        this.sequelize.sync();
 
         this.User = this.sequelize.define<Instance.User, Entity.IUser>('user', Entity.User, Entity.UserConfig);
         this.Photo = this.sequelize.define<Instance.Photo, Entity.IPhoto>('photo', Entity.Photo, Entity.PhotoConfig);

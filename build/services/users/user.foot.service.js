@@ -32,9 +32,7 @@ let UserFootService = class UserFootService extends base_service_1.BaseService {
     }
     findAll(params) {
         return __awaiter(this, void 0, void 0, function* () {
-            return this.UserFootDao.findAll({
-                where: params,
-            });
+            return this.UserFootDao.findAll(params);
         });
     }
 };
@@ -43,4 +41,3 @@ UserFootService = __decorate([
     __metadata("design:paramtypes", [Dao.UserFootDao])
 ], UserFootService);
 exports.UserFootService = UserFootService;
-//# sourceMappingURL=user.foot.service.js.map

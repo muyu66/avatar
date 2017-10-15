@@ -12,6 +12,7 @@ class Model {
             option: config.get('sql'),
         };
         this.sequelize = new Sequelize(this.dbConfig.database, this.dbConfig.username, this.dbConfig.password, this.dbConfig.option);
+        this.sequelize.sync();
         this.User = this.sequelize.define('user', Entity.User, Entity.UserConfig);
         this.Photo = this.sequelize.define('photo', Entity.Photo, Entity.PhotoConfig);
         this.Shoe = this.sequelize.define('shoe', Entity.Shoe, Entity.ShoeConfig);
@@ -21,4 +22,3 @@ class Model {
     }
 }
 exports.Model = Model;
-//# sourceMappingURL=index.js.map

@@ -73,6 +73,7 @@ export const Shoe = {
     },
     colors: {
         type: Sequelize.TEXT(),
+        allowNull: true,
     },
 };
 export const ShoeConfig: ModelConfig = {

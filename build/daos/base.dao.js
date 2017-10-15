@@ -12,4 +12,3 @@ class BaseDao {
     }
 }
 exports.BaseDao = BaseDao;
-//# sourceMappingURL=base.dao.js.map

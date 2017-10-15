@@ -18,4 +18,3 @@ UserFootModule = __decorate([
     })
 ], UserFootModule);
 exports.UserFootModule = UserFootModule;
-//# sourceMappingURL=user.foot.module.js.map

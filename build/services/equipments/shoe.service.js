@@ -43,4 +43,3 @@ ShoeService = __decorate([
     __metadata("design:paramtypes", [Dao.ShoeDao])
 ], ShoeService);
 exports.ShoeService = ShoeService;
-//# sourceMappingURL=shoe.service.js.map

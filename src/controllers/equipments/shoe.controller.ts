@@ -1,4 +1,4 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Controller, Get, Post, Body } from '@nestjs/common';
 import { BaseController } from '../base.controller';
 import * as Service from '../../services';
 import * as Instance from '../../models/instance';
@@ -19,7 +19,7 @@ export class ShoeController extends BaseController {
     }
 
     @Post()
-    async store(params: Instance.Shoe) {
+    async store( @Body() params: Instance.Shoe) {
         const shoe = await this.ShoeService.create(params);
 
         await this.UserFootService.create({
