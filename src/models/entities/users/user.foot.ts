@@ -1,4 +1,4 @@
-import { Bool, ModelConfig } from '../../../interfaces/type';
+import { Type } from '../../../interfaces';
 import * as Dict from '../../../interfaces/dict';
 import * as Sequelize from 'sequelize';
 import { IBase } from '../base';
@@ -50,7 +50,7 @@ export const UserFoot = {
         defaultValue: Dict.USE_STATE.闲置,
     },
 };
-export const UserFootConfig: ModelConfig = {
+export const UserFootConfig: Type.ModelConfig = {
     freezeTableName: true,
     tableName: 'user_foot',
     timestamps: true,

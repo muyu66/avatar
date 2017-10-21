@@ -1,4 +1,4 @@
-import { Bool, ModelConfig } from '../../../interfaces/type';
+import { Type } from '../../../interfaces';
 import * as Sequelize from 'sequelize';
 import { IBase } from '../base';
 
@@ -11,7 +11,7 @@ export interface IUser extends IBase {
      * @type {Bool}
      * @memberof IUser
      */
-    gender?: Bool;
+    gender?: Type.Bool;
     /**
      * 身高
      * 单位: 厘米
@@ -48,7 +48,7 @@ export const User = {
         allowNull: false,
     },
 };
-export const UserConfig: ModelConfig = {
+export const UserConfig: Type.ModelConfig = {
     freezeTableName: true,
     tableName: 'user',
     timestamps: true,

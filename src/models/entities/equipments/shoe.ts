@@ -1,4 +1,5 @@
-import { Bool, ModelConfig, Season, Color } from '../../../interfaces/type';
+import { Type } from '../../../interfaces';
+import { Common } from '../../../interfaces/common';
 import * as Sequelize from 'sequelize';
 import { IBase } from '../base';
 
@@ -35,8 +36,8 @@ export interface IShoe extends IBase {
      * @type {Season}
      * @memberof IShoe
      */
-    season?: Season;
-    colors?: Color[] | string;
+    season?: Type.Season;
+    colors?: Common.Color[] | string;
 }
 
 export const Shoe = {
@@ -76,7 +77,7 @@ export const Shoe = {
         allowNull: true,
     },
 };
-export const ShoeConfig: ModelConfig = {
+export const ShoeConfig: Type.ModelConfig = {
     freezeTableName: true,
     tableName: 'shoe',
     timestamps: true,

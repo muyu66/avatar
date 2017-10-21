@@ -65,6 +65,7 @@
         ajax.send(data);
     }
 
+
     function ajaxObject() {
         var xmlHttp;
         try {
@@ -105,8 +106,45 @@
         ajaxPost('http://127.0.0.1:3000/shoes', toJson($('#formAddShoe')));
     }
 
+    function addPhoto(id) {
+        var formData = new FormData($(`#${id}`)[0]);
+        $.ajax({
+            url: 'http://127.0.0.1:3000/photos',
+            type: 'POST',
+            data: formData,
+            async: true,
+            cache: false,
+            contentType: false,
+            processData: false,
+        });
+    }
+
     function getShoe() {
         ajaxGet('http://127.0.0.1:3000/shoes');
     }
 </script>
 <br>第二步
+<form id="uploadFront">
+    <p>正面 上传文件：
+        <input type="file" name="file" />
+        </ p>
+        <input type="button" value="上传" onclick="addPhoto('uploadFront')" />
+</form>
+<form id="uploadBack">
+    <p>背面 上传文件：
+        <input type="file" name="file" />
+        </ p>
+        <input type="button" value="上传" onclick="addPhoto('uploadBack')" />
+</form>
+<form id="uploadLeft">
+    <p>左侧面 上传文件：
+        <input type="file" name="file" />
+        </ p>
+        <input type="button" value="上传" onclick="addPhoto('uploadLeft')" />
+</form>
+<form id="uploadRight">
+    <p>右侧面 上传文件：
+        <input type="file" name="file" />
+        </ p>
+        <input type="button" value="上传" onclick="addPhoto('uploadRight')" />
+</form>

@@ -1,4 +1,4 @@
-import { Bool, ModelConfig } from '../../../interfaces/type';
+import { Type } from '../../../interfaces';
 import * as Sequelize from 'sequelize';
 import { IBase } from '../base';
 
@@ -23,7 +23,7 @@ export const Photo = {
         type: Sequelize.STRING(200),
     },
 };
-export const PhotoConfig: ModelConfig = {
+export const PhotoConfig: Type.ModelConfig = {
     freezeTableName: true,
     tableName: 'photo',
     timestamps: true,
